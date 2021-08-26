@@ -17,6 +17,23 @@
             max-width: 100%;
         }
 
+.mod-tbl {
+    max-width: 700px;
+    overflow: auto;
+}
+
+table {
+    table-layout: fixed;
+    min-width: 100%;
+}
+
+tbody th {
+    width: 200px;
+}
+td {
+    width: 130px;
+}
+
     </style>
 </head>
 <body>
@@ -134,7 +151,7 @@
         </section>
         <section class="mdl-layout__tab-panel" id="fixed-tab-4">
             <div class="page-content"><!-- Your content goes here --></div>
- 
+            <div class="mod-tbl">
             <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
                 <thead>
                   <tr>
@@ -159,6 +176,7 @@
 
                 </tbody>
               </table>
+              </div>
         
             </section>
 
