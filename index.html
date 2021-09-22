@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+
+<!-- Simple header with scrollable tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">CC</span>
+      </div>
+      <!-- Tabs -->
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#scroll-tab-1" class="mdl-layout__tab is-active">MainView</a>
+        <!-- <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a> -->
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">CC</span>
+    </div>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+        <div class="page-content"><!-- Your content goes here --></div>
+
+        <div id="main1">
+
+            <!-- Textfield with Floating Label -->
+            <form>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="main_textfield">
+                    <label class="mdl-textfield__label" for="main_textfield">Text...</label>
+                </div>
+            </form>
+
+            <p style="display: inline;">FontColor</p>
+            <p id="fontcolor_display">- #000000</p>
+            <br>
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch_fontcolor" style="display: unset;">
+                <input type="checkbox" id="switch_fontcolor" class="mdl-switch__input" onchange="switch_fontcolor_chenged()">
+                <span class="mdl-switch__label"></span>
+            </label>
+            <br>
+            <br>
+            <input type="color" name="" id="color_picker" onchange="color_picker_chenged()">
+
+            <br>
+            <br>
+
+            <p style="display: inline;">FontSize</p>
+            <p id="fontsize_display">- 25</p>
+            <br>
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch_fontsize" style="display: unset;">
+                <input type="checkbox" id="switch_fontsize" class="mdl-switch__input" onchange="switch_fontsize_chenged()">
+                <span class="mdl-switch__label"></span>
+            </label>
+            <br>
+            <br>
+            <!-- Slider with Starting Value -->
+            <div id="size_bar_current">
+              <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" id="size_bar" onchange="size_bar_chenged()">
+            </div>
+            <br>
+            <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="switch_bold">
+                <input type="checkbox" id="switch_bold" class="mdl-icon-toggle__input" onchange="switch_bold_chenged()">
+                <i class="mdl-icon-toggle__label material-icons">format_bold</i>
+            </label>
+            <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="switch_italic">
+                <input type="checkbox" id="switch_italic" class="mdl-icon-toggle__input" onchange="switch_italic_chenged()">
+                <i class="mdl-icon-toggle__label material-icons">format_italic</i>
+            </label>
+
+            <br>
+            <br>
+
+            <!-- Accent-colored raised button -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" onclick="generate()">
+                    Generate
+            </button>
+
+            <input type="text" id="clipstock" readonly="readonly">
+
+        </div>
+  
+      </section>
+      <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </section>
+    </main>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
