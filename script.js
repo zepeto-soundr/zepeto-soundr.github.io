@@ -5,7 +5,7 @@ function switch_fontcolor_chenged() {
     }else{
         picker_fontcolor.style.left = "-100%";
         display_fontcolor.style.display = "none";
-        textfield.style.color = "unset"
+        textfield.style.color = "unset";
     }
 }
 
