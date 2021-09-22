@@ -1,0 +1,62 @@
+html,body{
+    overflow: hidden;
+}
+
+#switch_title{
+    display: inline;
+}
+
+.display_text{
+    display: inline;
+}
+
+#picker_fontcolor{
+    margin-top: 5px;
+    position: relative;
+    left: -100%;
+    transition: .5s;
+}
+
+#slider_fontsize_current{
+    position: relative;
+    left: -100%;
+    transition: .5s;
+}
+
+#textfield_current{
+    padding: 0px 25px 0px 25px;
+}
+#fontcolor_current{
+    padding: 0px 25px 0px 25px;
+}
+#fontsize_current{
+    padding: 30px 25px 0px 25px;
+}
+#fontother_current{
+    padding: 10px 25px 0px 25px;
+}
+#generate_current{
+    padding: 10px 25px 0px 25px;
+}
+
+#clipstock{
+    display: none;
+    font-size: 16px;
+    transform: scale(0.8);
+}
+
+
+#clipstock2{
+    display: none;
+    font-size: 16px;
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+#textloop_current{
+    padding: 0px 25px 0px 25px;
+}
