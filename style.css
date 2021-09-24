@@ -15,8 +15,6 @@ html,body{
     position: relative;
     left: -100%;
     transition: .5s;
-    touch-action: manipulation;
-
 }
 
 #slider_fontsize_current{
