@@ -128,8 +128,3 @@ function copy(id) {
     return result
 }
 
-
-
-picker_fontcolor.addEventListener('touchend', event => {
-  picker_fontcolor.preventDefault();
-}, false);
