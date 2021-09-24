@@ -15,7 +15,6 @@ html,body{
     position: relative;
     left: -100%;
     transition: .5s;
-    hight: 0px;
 }
 
 #slider_fontsize_current{
